@@ -10,7 +10,6 @@ interface CustomerStoryProps {
 export default function CustomerStory({
     rating,
     comment,
-    avatar,
     name,
 }: CustomerStoryProps) {
     const ratingRender = []

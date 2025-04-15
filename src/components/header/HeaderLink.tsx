@@ -10,8 +10,8 @@ export enum HeaderLinkType {
 interface HeaderLinkProps {
     title: string,
     type?: HeaderLinkType,
-    onHoverChange?: Function,
-    onClick?: Function,
+    onHoverChange?: (isHovered: boolean) => void,
+    onClick?: () => void,
 }
 
 export default function HeaderLink({ title, type = HeaderLinkType.PLAIN, onHoverChange, onClick = () => null }: HeaderLinkProps) {

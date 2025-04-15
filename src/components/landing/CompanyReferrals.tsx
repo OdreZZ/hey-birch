@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { useEffect, useState } from "react"
 
 const ALL_LOGOS = [
@@ -15,16 +16,16 @@ export default function CompanyReferrals() {
 
     const logosRender = ALL_LOGOS.map(logo => (
         <div className="flex" key={`company-${logo}`}>
-            <img src={`/logos/${logo}`}
-                className="h-10 grayscale min-w-3xs"
+            <Image src={`/logos/${logo}`} alt={`Logo of ${logo}`}
+                className="h-10 grayscale min-w-3xs" width={140} height={30}
             />
         </div>
     ))
 
     const logosRender2 = ALL_LOGOS.map(logo => (
         <div className="flex" key={`company-${logo}-2`}>
-            <img src={`/logos/${logo}`}                
-                className="h-10 grayscale min-w-3xs"
+            <Image src={`/logos/${logo}`} alt={`Logo of ${logo}`}
+                className="h-10 grayscale min-w-3xs" width={140} height={30}
             />
         </div>
     ))

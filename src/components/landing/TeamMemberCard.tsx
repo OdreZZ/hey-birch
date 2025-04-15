@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface TeamMemberCardProps {
     image: string,
     icon: React.ReactNode,
@@ -12,8 +14,8 @@ export default function TeamMemberCard({
     description,
 }: TeamMemberCardProps) {
     return <div className="bg-black rounded-lg">
-        <img src={image} 
-            className="rounded-t-lg"
+        <Image src={image} alt="Team member photo"
+            className="rounded-t-lg" width={150} height={200}
         />
 
         <div className="flex p-4 gap-4 py-6">

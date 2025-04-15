@@ -10,7 +10,7 @@ export enum FooterLinkType {
 interface FooterLinkProps {
     title: string,
     type?: FooterLinkType,
-    onHoverChange?: Function,
+    onHoverChange?: (isHovered: boolean) => void,
 }
 
 export default function FooterLink({ title, type = FooterLinkType.PLAIN, onHoverChange }: FooterLinkProps) {

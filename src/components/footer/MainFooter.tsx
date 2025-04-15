@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Star } from "@mui/icons-material";
 import HeaderLink, { HeaderLinkType } from "../header/HeaderLink";
 import FooterLink from "./FooterLink";
@@ -26,7 +27,7 @@ export default function MainFooter() {
             <div>
                 <div className="flex items-center justify-center h-50 rounded-lg relative overflow-hidden">
                     <HeaderLink title="Get started" type={HeaderLinkType.WHITE_BUTTON} />
-                    <img src="/misc/backdrop1.jpg" className="absolute z-0" />
+                    <img src="/misc/backdrop1.jpg" className="absolute z-0" alt="Backdrop" />
                 </div>
 
                 <div className="flex flex-col gap-10 p-6 bg-gray-800 rounded-lg">
@@ -141,7 +142,7 @@ export default function MainFooter() {
 
         <div className="flex flex-col gap-6 text-gray-400 text-xs border-t-1 border-gray-700 py-4 max-w-7xl">
             <div className="flex items-center">
-                <img src="/logos/logo2.svg" className="h-10" />
+                <img src="/logos/logo2.svg" className="h-10" alt="Birch Logo" />
 
                 © 2025 Birch Technologies Inc
             </div>

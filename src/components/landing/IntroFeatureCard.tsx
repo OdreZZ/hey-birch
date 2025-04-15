@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { useState } from "react"
 
 interface IntroFeatureCardProps {
@@ -34,11 +35,11 @@ export default function IntroFeatureCard({
         </div>
 
         <div className="bg-gray-200 w-full flex justify-center overflow-hidden select-none grow relative">
-            <img src={image}
+            <img src={image} alt="Feature screenshot"
                 className="w-75 mt-20 rounded-t-md transition delay-50 duration-300 ease-in-out hover:scale-115 scale-105 z-10"
             />
 
-            <img src={backgroundImage}
+            <img src={backgroundImage} alt="Backdrop"
                 className="absolute z-0 h-full transition-opacity duration-600"
                 style={{
                     opacity: isHovered ? 1 : 0,

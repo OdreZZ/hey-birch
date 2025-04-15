@@ -1,7 +1,7 @@
 import HeaderLink, { HeaderLinkType } from "../header/HeaderLink";
 
 interface DisclaimerPopupProps {
-    onDismiss: Function,
+    onDismiss: () => void,
 }
 
 export default function DisclaimerPopup({ onDismiss }: DisclaimerPopupProps) {
@@ -11,7 +11,7 @@ export default function DisclaimerPopup({ onDismiss }: DisclaimerPopupProps) {
         </div>
 
         <div className="text-sm text-center">
-            This is a simple landing page inspired by the "Hello Bonsai" website.
+            This is a simple landing page inspired by the Hello Bonsai website.
         </div>
 
         <div className="text-sm text-center">

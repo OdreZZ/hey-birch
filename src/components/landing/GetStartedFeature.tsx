@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import HeaderLink, { HeaderLinkType } from "../header/HeaderLink";
 
 interface GetStartedFeatureProps {
@@ -55,10 +56,10 @@ export default function GetStartedFeature({
 
         <div className="select-none z-10 relative overflow-hidden max-w-md">
             <div className="absolute z-0 top-px">
-                <img src={backdrop} className="rounded-md" />
+                <img src={backdrop} className="rounded-md" alt="Backdrop" />
             </div>
 
-            <img src={image} className="relative mt-12 ml-12 z-10 rounded-md" />
+            <img src={image} className="relative mt-12 ml-12 z-10 rounded-md" alt="Feature photo" />
         </div>
     </div>
 }

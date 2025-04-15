@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { AccessAlarm, AccountTree, Article, AttachMoney, Book, Carpenter, Chat, Description, Feed, LocalAtm, Payment, People, PunchClock, Receipt, Task, UploadFile, ViewTimeline } from "@mui/icons-material";
 import IntroFeatureCard from "./IntroFeatureCard";
 import { useEffect, useState } from "react";
@@ -99,7 +100,7 @@ export default function IntroFeatureList() {
         </div>
 
         <div className="w-full">
-            <img src="/dashboard.jpg" />
+            <img src="/dashboard.jpg" alt="Dashboard screenshot" />
         </div>
 
         <div className="flex flex-col lg:flex-row gap-2 bg-gray-100 pt-6">
