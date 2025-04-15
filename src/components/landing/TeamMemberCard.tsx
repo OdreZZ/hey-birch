@@ -1,4 +1,4 @@
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element */
 
 interface TeamMemberCardProps {
     image: string,
@@ -14,8 +14,8 @@ export default function TeamMemberCard({
     description,
 }: TeamMemberCardProps) {
     return <div className="bg-black rounded-lg">
-        <Image src={image} alt="Team member photo"
-            className="rounded-t-lg" width={150} height={200}
+        <img src={image} alt="Team member photo"
+            className="rounded-t-lg"
         />
 
         <div className="flex p-4 gap-4 py-6">
